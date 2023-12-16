@@ -38,7 +38,7 @@ async def save_group(bot, message):
             return
         buttons = [[
             InlineKeyboardButton('ℹ️ Hᴇʟᴘ ℹ️', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇs 📢', url='https://t.me/TamilanBotsZ')
+            InlineKeyboardButton('📢 ᴜᴘᴅᴀᴛᴇs 📢', url='https://t.me/Filmy_Rohesh')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -167,11 +167,11 @@ async def gen_invite(bot, message):
         return await message.reply("Iɴᴠɪᴛᴇ Lɪɴᴋ Gᴇɴᴇʀᴀᴛɪᴏɴ Fᴀɪʟᴇᴅ, Iᴀᴍ Nᴏᴛ Hᴀᴠɪɴɢ Sᴜғғɪᴄɪᴇɴᴛ Rɪɢʜᴛꜱ")
     except Exception as e:
         return await message.reply(f'Error {e}')
-    await message.reply(f'ʜᴇʀᴇ ᴜʀ ɪɴᴠɪᴛᴇ ʟɪɴᴋ {link.invite_link}')
+    await message.reply(f'ʜᴇʀᴇ ᴜʀ ɪɴᴠɪᴛᴇ ʟɪɴᴋ {link.Filmy_Rohesh}')
 
 @Client.on_message(filters.command('ban') & filters.user(ADMINS))
 async def ban_a_user(bot, message):
-    # https://t.me/GetTGLink/4185
+    # https://t.me/Filmy_Rohesh
     if len(message.command) == 1:
         return await message.reply('ɢɪᴠᴇ ᴍᴇ ᴀ ɪᴅ/ᴜsᴇʀɴᴀᴍᴇ')
     r = message.text.split(None)
