@@ -14,7 +14,7 @@ async def help(_, message):
 
 @Client.on_message(filters.command("credits", CMD))
 async def help(_, message):
-    await message.reply_text("Tʜɪs Is Cᴏᴅᴇᴅ Bʏ @Tamilan_BotsZ/n/Tʜᴀɴᴋs Tᴏ Eᴠᴀ Mᴀʀɪᴇ ﹝ ʙᴀsᴇ ᴄᴏᴅᴇ ﹞/n/nTʜɪs Is Aɴ Oᴩᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ Sᴏ Sᴜᴩᴩᴏʀᴛ Aɴᴅ Dᴏɴ´ᴛ Sᴇʟʟ Fᴏʀ Mᴏɴᴇʏ")
+    await message.reply_text("Tʜɪs Is Cᴏᴅᴇᴅ Bʏ @Filmy_Rohesh /n/Tʜᴀɴᴋs Tᴏ Eᴠᴀ Mᴀʀɪᴇ ﹝ ʙᴀsᴇ ᴄᴏᴅᴇ ﹞/n/nTʜɪs Is Aɴ Oᴩᴇɴ Sᴏᴜʀᴄᴇ Pʀᴏᴊᴇᴄᴛ Sᴏ Sᴜᴩᴩᴏʀᴛ Aɴᴅ Dᴏɴ´ᴛ Sᴇʟʟ Fᴏʀ Mᴏɴᴇʏ")
 
 @Client.on_message(filters.command("movies", CMD))
 async def movie(_, message):
@@ -26,7 +26,7 @@ async def series(_, message):
 
 @Client.on_message(filters.command("download", CMD))
 async def tutorial(_, message):
-    await message.reply_text("Fɪʀsᴛ Cʟɪᴄᴋ Tʜɪs Lɪɴᴋ 👉 https://t.me/Sharath_Links/13/n/nAғᴛᴇʀ Wᴀᴛᴄʜᴇᴅ Tʜᴇ Vɪᴅᴇᴏ Sᴇɴᴅ Aɴʏ Mᴏᴠɪᴇs / Sᴇʀɪᴇs Nᴀᴍᴇ Wɪᴛʜ Cᴏᴛᴛᴇᴄᴛ Sᴩᴇʟʟɪɴɢ Aɴᴅ I Wɪʟʟ Sᴇɴᴅ Tʜᴇ Fɪʟᴇ Lɪɴᴋ/n/nCᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛɪɴɢ Mᴇᴛʜᴏᴅ 👉 /movies /n/nCᴏʀʀᴇᴄᴛ Sᴇʀɪᴇs Rᴇǫᴜᴇsᴛɪɴɢ Mᴇᴛʜᴏᴅ 👉 /series")
+    await message.reply_text("Fɪʀsᴛ Cʟɪᴄᴋ Tʜɪs Lɪɴᴋ 👉 https://t.me/Filmy_Rohesh/n/nAғᴛᴇʀ Wᴀᴛᴄʜᴇᴅ Tʜᴇ Vɪᴅᴇᴏ Sᴇɴᴅ Aɴʏ Mᴏᴠɪᴇs / Sᴇʀɪᴇs Nᴀᴍᴇ Wɪᴛʜ Cᴏᴛᴛᴇᴄᴛ Sᴩᴇʟʟɪɴɢ Aɴᴅ I Wɪʟʟ Sᴇɴᴅ Tʜᴇ Fɪʟᴇ Lɪɴᴋ/n/nCᴏʀʀᴇᴄᴛ Mᴏᴠɪᴇ Rᴇǫᴜᴇsᴛɪɴɢ Mᴇᴛʜᴏᴅ 👉 /movies /n/nCᴏʀʀᴇᴄᴛ Sᴇʀɪᴇs Rᴇǫᴜᴇsᴛɪɴɢ Mᴇᴛʜᴏᴅ 👉 /series")
 
 @Client.on_message(filters.command("ping", CMD))
 async def ping(_, message):
