@@ -73,4 +73,4 @@ SHORTNER_SITE =  environ.get('SHORTNER_SITE', '') #Put Only Shortner Site domain
 
 SHORTNER_API =  environ.get('SHORTNER_API', '')
 
-AUTO_DELETE =  environ.get('AUTO_DELETE', 'True'
+AUTO_DELETE =  environ.get('AUTO_DELETE', 'True')
