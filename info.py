@@ -45,6 +45,7 @@ CUSTOM_FILE_CAPTION = environ.get("CUSTOM_FILE_CAPTION", "⚡<b>𝙁𝙄𝙇𝙀
 BATCH_FILE_CAPTION = environ.get("BATCH_FILE_CAPTION", "⚡<b>𝙁𝙄𝙇𝙀 𝙐𝙋𝙇𝙊𝘼𝘿𝙀𝘿 𝘽𝙔 [🌟 @𝙁𝙄𝙇𝙈𝙔_𝙍𝙊𝙃𝙀𝙎𝙃_𝙁𝙄𝙇𝙀𝙎™](https://t.me/Filmy_Rohesh_Files)</b>⚡\n\n🎦 <b>File Name: </b> ➥  <i>{file_caption}</i>\n⚙️ <b>Size: </b><i>{file_size}</i>\n\n                ❤️<b>WE LOVE YOU</b>❤️\n🔥  ↭ <b>𝙀𝙉𝙏𝙀𝙍𝙏𝘼𝙄𝙉𝙈𝙀𝙉𝙏 𝙆𝙀 𝙇𝙄𝙔𝙀 𝙅𝙊𝙄𝙉𝙀 𝙆𝘼𝙍𝙀 👁️‍🗨️ [⚜️𝙁𝙄𝙇𝙈𝙔 𝙍𝙊𝙃𝙀𝙎𝙃™⚜️](https://t.me/Filmy_Rohesh)</b> ↭  🔥")
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", "<b>Query: {query}</b> \n‌IMDb Data:\n\n🏷 Title: <a href={url}>{title}</a>\n🎭 Genres: {genres}\n📆 Year: <a href={url}/releaseinfo>{year}</a>\n🌟 Rating: <a href={url}/ratings>{rating}</a> / 10")
 LONG_IMDB_DESCRIPTION = is_enabled(environ.get("LONG_IMDB_DESCRIPTION", "True"), True)
+LINK_MODE = is_enabled("LINK_MODE", True)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
