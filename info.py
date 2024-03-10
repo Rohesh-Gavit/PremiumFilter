@@ -14,14 +14,14 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23898744'))
 API_HASH = environ.get('API_HASH', '0b13c810c80b548604650cbe3c3db0c3')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6633984787:AAHB77PK04bmYBK1qskeIO-DSCWIEguqbl4')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', False ))
-PICS = (environ.get('PICS', 'https://telegra.ph/file/e02e42f8d74f542608227.jpg https://telegra.ph/file/e02e42f8d74f542608227.jpg https://graph.org/file/992c0f0bbb2421b00b03b.jpg https://graph.org/file/027f1b1a04b5d1d2d8570.jpg https://graph.org/file/58897113b411ebc9ba6ed.jpg https://graph.org/file/e631893dade5692d00f4a.jpg https://graph.org/file/2ea5956313f9d26ba4e24.jpg https://graph.org/file/cde23078b696aaf00487b.jpg  https://graph.org/file/6a76d821af95489a230bb.jpg https://graph.org/file/6f9d3dfa3b6873d047bed.jpg https://graph.org/file/04c5c87962ed4c8d456a2.jpg https://graph.org/file/bd8965942893832a66a65.jpg https://graph.org/file/57128f6d942c1313f51de.jpg')).split()
+PICS = (environ.get('PICS', 'https://telegra.ph/file/e02e42f8d74f542608227.jpghttps://telegra.ph/file/e02e42f8d74f542608227.jpghttps://graph.org/file/992c0f0bbb2421b00b03b.jpghttps://graph.org/file/027f1b1a04b5d1d2d8570.jpg https://graph.org/file/e631893dade5692d00f4a.jpghttps://graph.org/file/2ea5956313f9d26ba4e24.jpghttps://graph.org/file/cde23078b696aaf00487b.jpghttps://graph.org/file/6a76d821af95489a230bb.jpghttps://graph.org/file/6f9d3dfa3b6873d047bed.jpghttps://graph.org/file/04c5c87962ed4c8d456a2.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '5698613889').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1790510761').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001856938140').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
@@ -32,11 +32,11 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://Filmy:oiKn0AkUrgeBGDFq@rohidasgavit.pbz03z1.mongodb.net/?retryWrites=true&w=majority")
-DATABASE_NAME = environ.get('DATABASE_NAME', "Telegram")
+DATABASE_NAME = environ.get('DATABASE_NAME', "Rohesh_Princess_Pro_Bot")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1001713712725' ))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL','-1001550526516' ))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1001792853580')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
@@ -61,7 +61,7 @@ LINK_MODE = is_enabled("LINK_MODE", True)
 SPELL_CHECK_REPLY = is_enabled(environ.get("SPELL_CHECK_REPLY", "True"), True)
 MAX_LIST_ELM = environ.get("MAX_LIST_ELM", None)
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
-FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001998858242')).split()]
+FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001550526516')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "False")), False)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
 PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
