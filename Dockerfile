@@ -1,13 +1,12 @@
-FROM python:3.11.2 
-#.          👆👆
-#change 3.10 to 3.11.2 if you depolying heroku or koyeb
+FROM python:3.10.9-slim-buster
 
-WORKDIR /TamilanBotsz
+RUN apt update && apt upgrade -y
+RUN apt install git -y
+COPY requirements.txt /requirements.txt
 
-COPY requirements.txt ./
-
-RUN pip install -r requirements.txt
-
-copy . .
-
-CMD ["python3", "bot.py"]
+RUN cd /
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+RUN mkdir /DQ-The-File-Donor
+WORKDIR /DQ-The-File-Donor
+COPY start.sh /start.sh
+CMD ["/bin/bash", "/start.sh"]
